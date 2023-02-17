@@ -34,9 +34,10 @@ struct CalculatorView: View {
         
         switch buttonType {
         case ButtonTypes.allClear:
-            firstValue = "0"
-            secondValue = "0"
-            sum = "0"
+            firstValue = ""
+            secondValue = ""
+            sum = ""
+            firstPopulated = false
             return
         case ButtonTypes.digit:
             switch firstPopulated {
@@ -86,19 +87,19 @@ struct CalculatorView: View {
         switch operand {
         case "x":
             sum = "\(first * second)"
-            firstValue = ""
+            firstValue = "\(first * second)"
             secondValue = ""
-            firstPopulated = false
+            firstPopulated = true
         case "/":
             sum = "\(first / second)"
-            firstValue = ""
+            firstValue = "\(first / second)"
             secondValue = ""
-            firstPopulated = false
+            firstPopulated = true
         case "-":
             sum = "\(first - second)"
-            firstValue = ""
+            firstValue = "\(first - second)"
             secondValue = ""
-            firstPopulated = false
+            firstPopulated = true
         default:
             sum = "666 Error"
         }
