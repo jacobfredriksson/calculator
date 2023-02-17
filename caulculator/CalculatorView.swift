@@ -26,11 +26,7 @@ struct CalculatorView: View {
         ]
     }
     
-    func test(buttonType: ButtonTypes, value: String)  {
-    
-         
-         
-//        print(buttonType)
+    func calcButtonOperation(buttonType: ButtonTypes, value: String)  {
         
         switch buttonType {
         case ButtonTypes.allClear:
@@ -44,12 +40,10 @@ struct CalculatorView: View {
             case false:
                 firstValue += value
                 sum = firstValue
-                print(firstValue, value)
                 return
             default:
                 secondValue += value
                 sum = secondValue
-                print(secondValue, value)
                 return
                 
             }
@@ -57,24 +51,17 @@ struct CalculatorView: View {
         case ButtonTypes.operation(let operation):
             firstPopulated = true
             sum = ""
-//            print(sum, "sum", firstValue, "firstValue", secondValue, "secondvalue", operation)
             switch operation {
-            case "x":
-                operand = operation
-                return
-            case "/":
-                operand = operation
-                return
-            case "-":
+            case "x", "/", "-":
                 operand = operation
                 return
             
             case "=":
-                calculateTotal(first: Int(firstValue) ?? 0, second: Int(secondValue) ?? 0, operand: operand
+                calculateResult(first: Float(firstValue) ?? 0, second: Float(secondValue) ?? 0, operand: operand
                 )
             
             default:
-                print("Something is weird here")
+                print("Error, operator does not exist")
        
             }
         }
@@ -82,19 +69,20 @@ struct CalculatorView: View {
   
     }
     
-    func calculateTotal(first: Int, second: Int, operand: String) {
-        print(operand, "OPERAND")
+    func calculateResult(first: Float, second: Float, operand: String) {
         switch operand {
         case "x":
             sum = "\(first * second)"
             firstValue = "\(first * second)"
             secondValue = ""
             firstPopulated = true
+        
         case "/":
             sum = "\(first / second)"
             firstValue = "\(first / second)"
             secondValue = ""
             firstPopulated = true
+            print(sum)
         case "-":
             sum = "\(first - second)"
             firstValue = "\(first - second)"
@@ -113,7 +101,7 @@ struct CalculatorView: View {
                 HStack(spacing: Constants.padding) {
                     ForEach(row, id: \.self) { btn in
                         Button(btn.title){
-                            test(buttonType: btn.self, value: btn.title)
+                            calcButtonOperation(buttonType: btn.self, value: btn.title)
                             
                         }
                             .buttonStyle(CalculatorStyledButton(
