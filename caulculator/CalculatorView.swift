@@ -71,21 +71,25 @@ struct CalculatorView: View {
     
     func calculateResult(first: Float, second: Float, operand: String) {
         switch operand {
+            
         case "x":
-            sum = "\(first * second)"
-            firstValue = "\(first * second)"
+            let result = (first * second as NSNumber).stringValue
+            sum = result
+            firstValue = result
             secondValue = ""
             firstPopulated = true
         
         case "/":
-            sum = "\(first / second)"
-            firstValue = "\(first / second)"
+            let result = (first / second as NSNumber).stringValue
+            sum = result
+            firstValue = result
             secondValue = ""
             firstPopulated = true
             print(sum)
         case "-":
-            sum = "\(first - second)"
-            firstValue = "\(first - second)"
+            let result = (first - second as NSNumber).stringValue
+            sum = result
+            firstValue = result
             secondValue = ""
             firstPopulated = true
         default:

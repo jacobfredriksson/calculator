@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8D41C91299A80690075C7AD /* caulculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D41C90299A80690075C7AD /* caulculatorApp.swift */; };
+		B8D41C91299A80690075C7AD /* calculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D41C90299A80690075C7AD /* calculatorApp.swift */; };
 		B8D41C93299A80690075C7AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D41C92299A80690075C7AD /* ContentView.swift */; };
 		B8D41C95299A806A0075C7AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D41C94299A806A0075C7AD /* Assets.xcassets */; };
 		B8D41C99299A806A0075C7AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D41C98299A806A0075C7AD /* Preview Assets.xcassets */; };
@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		B8D41C8D299A80690075C7AD /* caulculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = caulculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8D41C90299A80690075C7AD /* caulculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caulculatorApp.swift; sourceTree = "<group>"; };
+		B8D41C90299A80690075C7AD /* calculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorApp.swift; sourceTree = "<group>"; };
 		B8D41C92299A80690075C7AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B8D41C94299A806A0075C7AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8D41C96299A806A0075C7AD /* caulculator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = caulculator.entitlements; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		B8D41C8F299A80690075C7AD /* caulculator */ = {
 			isa = PBXGroup;
 			children = (
-				B8D41C90299A80690075C7AD /* caulculatorApp.swift */,
+				B8D41C90299A80690075C7AD /* calculatorApp.swift */,
 				B8D41C92299A80690075C7AD /* ContentView.swift */,
 				B8D41C94299A806A0075C7AD /* Assets.xcassets */,
 				B8D41C96299A806A0075C7AD /* caulculator.entitlements */,
@@ -283,7 +283,7 @@
 				B8D41CC6299E34880075C7AD /* CalculatorOperations.swift in Sources */,
 				B8D41C93299A80690075C7AD /* ContentView.swift in Sources */,
 				B8D41CBE299D04250075C7AD /* CalculatorStyledButton.swift in Sources */,
-				B8D41C91299A80690075C7AD /* caulculatorApp.swift in Sources */,
+				B8D41C91299A80690075C7AD /* calculatorApp.swift in Sources */,
 				B8D41CC2299E2CFC0075C7AD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
