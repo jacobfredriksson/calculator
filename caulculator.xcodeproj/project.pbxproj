@@ -18,8 +18,7 @@
 		B8D41CBE299D04250075C7AD /* CalculatorStyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D41CBD299D04250075C7AD /* CalculatorStyledButton.swift */; };
 		B8D41CC0299E2CAB0075C7AD /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D41CBF299E2CAB0075C7AD /* CalculatorView.swift */; };
 		B8D41CC2299E2CFC0075C7AD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D41CC1299E2CFC0075C7AD /* Constants.swift */; };
-		B8D41CC4299E33E60075C7AD /* CalculatorContentUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D41CC3299E33E60075C7AD /* CalculatorContentUI.swift */; };
-		B8D41CC6299E34880075C7AD /* CalculatorOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D41CC5299E34880075C7AD /* CalculatorOperations.swift */; };
+		B8D41CC929A3D9AD0075C7AD /* CalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D41CC829A3D9AD0075C7AD /* CalculatorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +54,7 @@
 		B8D41CBD299D04250075C7AD /* CalculatorStyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorStyledButton.swift; sourceTree = "<group>"; };
 		B8D41CBF299E2CAB0075C7AD /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		B8D41CC1299E2CFC0075C7AD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		B8D41CC3299E33E60075C7AD /* CalculatorContentUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorContentUI.swift; sourceTree = "<group>"; };
-		B8D41CC5299E34880075C7AD /* CalculatorOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorOperations.swift; sourceTree = "<group>"; };
+		B8D41CC829A3D9AD0075C7AD /* CalculatorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +105,7 @@
 		B8D41C8F299A80690075C7AD /* caulculator */ = {
 			isa = PBXGroup;
 			children = (
+				B8D41CC729A3D97B0075C7AD /* CalculatorView */,
 				B8D41C90299A80690075C7AD /* calculatorApp.swift */,
 				B8D41C92299A80690075C7AD /* ContentView.swift */,
 				B8D41C94299A806A0075C7AD /* Assets.xcassets */,
@@ -114,10 +113,7 @@
 				B8D41C97299A806A0075C7AD /* Preview Content */,
 				B8D41CBB299D02D00075C7AD /* ButtonTypes.swift */,
 				B8D41CBD299D04250075C7AD /* CalculatorStyledButton.swift */,
-				B8D41CBF299E2CAB0075C7AD /* CalculatorView.swift */,
 				B8D41CC1299E2CFC0075C7AD /* Constants.swift */,
-				B8D41CC3299E33E60075C7AD /* CalculatorContentUI.swift */,
-				B8D41CC5299E34880075C7AD /* CalculatorOperations.swift */,
 			);
 			path = caulculator;
 			sourceTree = "<group>";
@@ -145,6 +141,15 @@
 				B8D41CAE299A806A0075C7AD /* caulculatorUITestsLaunchTests.swift */,
 			);
 			path = caulculatorUITests;
+			sourceTree = "<group>";
+		};
+		B8D41CC729A3D97B0075C7AD /* CalculatorView */ = {
+			isa = PBXGroup;
+			children = (
+				B8D41CBF299E2CAB0075C7AD /* CalculatorView.swift */,
+				B8D41CC829A3D9AD0075C7AD /* CalculatorModel.swift */,
+			);
+			path = CalculatorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,10 +284,9 @@
 			files = (
 				B8D41CBC299D02D00075C7AD /* ButtonTypes.swift in Sources */,
 				B8D41CC0299E2CAB0075C7AD /* CalculatorView.swift in Sources */,
-				B8D41CC4299E33E60075C7AD /* CalculatorContentUI.swift in Sources */,
-				B8D41CC6299E34880075C7AD /* CalculatorOperations.swift in Sources */,
 				B8D41C93299A80690075C7AD /* ContentView.swift in Sources */,
 				B8D41CBE299D04250075C7AD /* CalculatorStyledButton.swift in Sources */,
+				B8D41CC929A3D9AD0075C7AD /* CalculatorModel.swift in Sources */,
 				B8D41C91299A80690075C7AD /* calculatorApp.swift in Sources */,
 				B8D41CC2299E2CFC0075C7AD /* Constants.swift in Sources */,
 			);
